@@ -1,11 +1,11 @@
 function calculateNetSalary(basicSalary, benefits) {
   // PAYE tax brackets and rates
   const payeRates = [
-    { upperLimit: 288000, rate: 0.1 },        // Up to 24,000 (10%)
-    { upperLimit: 388000, rate: 0.25 },       // 24,001 - 32,333 (25%)
-    { upperLimit: 6000000, rate: 0.30 },      // 32,334 - 500,000 (30%)
-    { upperLimit: 9600000, rate: 0.325 },     // 500,001 - 800,000 (32.5%)
-    { upperLimit: Infinity, rate: 0.35 }     // Above 800,000 (35%)
+    { upperLimit: 288000, rate: 0.1 },        // Up to 288,000 (10%)
+    { upperLimit: 388000, rate: 0.25 },       // 288,001 - 388,000 (25%)
+    { upperLimit: 6000000, rate: 0.30 },      // 388,001 - 6,000,000 (30%)
+    { upperLimit: 9600000, rate: 0.325 },     // 6,000,001 - 9,600,000 (32.5%)
+    { upperLimit: Infinity, rate: 0.35 }     // Above 9,600,000 (35%)
   ];
 
   const SHIF_RATE = 0.0275;  // effective 1st October
